@@ -78,7 +78,41 @@ const finalSums =[...nums, ...nums2];   //Spread Operator
 function sums(...numbers) {
     return numbers;
 }
-console.log(sums(nums,nums2, 5 , 'hello'));
+//console.log(sums(...nums,...nums2, 5));
 
-git config --global user.email "you@example.com"
-  git config --global user.name "Your Name"
+//More array method
+//concat
+const newArr = nums.concat(nums2);
+//console.log(newArr);
+
+//Slice
+const newArr1 = arr.slice(0,2);
+//console.log(newArr1);
+
+//Splice
+const newArr2 = arr.splice(1,2, "orange");
+//console.log(newArr2);
+
+//Fill
+const dummy = [2, 5, 1, 6];
+dummy.fill(0,2)
+//console.log(dummy);
+
+//findIndex
+const index = nums.findIndex((item) => item === 2);
+//console.log(index)
+
+//Flat
+const flatEx =  [1,[2,3], [[4,5], 6]]; //=> [1, 2, 3 , 4, 5, 6]
+const flatenedArray = flatEx.flat(2);
+//console.log(flatenedArray);
+
+//reverse
+nums.reverse();
+//console.log(nums);
+
+//sort
+const unsorted = [5, 2, 10, 7, 3, 1];
+unsorted.sort((a,b) => b-a);
+console.log(unsorted);
+
