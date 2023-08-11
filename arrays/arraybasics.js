@@ -91,7 +91,7 @@ const newArr1 = arr.slice(0,2);
 
 //Splice
 const newArr2 = arr.splice(1,2, "orange");
-//console.log(newArr2);
+console.log(newArr2);
 
 //Fill
 const dummy = [2, 5, 1, 6];
@@ -114,5 +114,4 @@ nums.reverse();
 //sort
 const unsorted = [5, 2, 10, 7, 3, 1];
 unsorted.sort((a,b) => b-a);
-console.log(unsorted);
-
+//console.log(unsorted);
