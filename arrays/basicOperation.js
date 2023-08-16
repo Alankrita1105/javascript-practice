@@ -62,4 +62,5 @@ function fun2() {
         output += "myGlobal", + myGlobal;
         
     }
+
 }
