@@ -62,5 +62,57 @@ function fun2() {
         output += "myGlobal", + myGlobal;
         
     }
+    if (typeof myGlobal2 != "undefined") {
+        output += "myGlobal2", + myGlobal2;
+        
+    }
+    //console.log(output);
 
 }
+fun1();
+fun2();
+
+//ASSIGNMENT WITH RETURN VALUE
+var changed = 0;
+function change(num) {
+    return (num+5)/5;
+}
+changed = change(10);
+//console.log(changed);
+
+//STAND IN LINE
+function nextInlLine(arr, items) {
+    arr.push(items);
+    return arr.shift();
+}
+var testString = [1, 2, 3, 4, 5, 6]
+//console.log("Before: " + JSON.stringify(testString));
+//console.log(nextInlLine(testString, 7));
+//console.log("After: " + JSON.stringify(testString));
+
+//CONDITIONAL LOGICS WITH IF STATEMENT
+function tRUEoRfalse(isTrue) {
+    if (isTrue) {
+        return "Yes, it's true"
+    }
+    return "No, it's False";    
+}
+//console.log(tRUEoRfalse(true));
+
+//SWITCH STATEMENTS
+
+function switchCase(val) {
+    var ans = "";
+    switch (val) {
+        case 1:
+            ans = "alpha";
+            break;
+        case 2:
+            ans = "beta";
+        case 3:
+            ans = "gamma";
+            break;
+    }
+    return ans;
+}
+console.log(switchCase(1));
