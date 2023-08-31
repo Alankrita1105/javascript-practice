@@ -1,4 +1,5 @@
 /*
+/*
 CONCEPT 1
 Cycle of allocations and call stack
 */
@@ -61,17 +62,80 @@ function b() {
 }
 
 /*
-METHOD 4: UNDEFINED AND NIT DEFINED
+METHOD 4: UNDEFINED AND NOT DEFINED
 */
+/*
+var a;
+console.log(a);
+a = 10;
+console.log(a);
+a = "Hello there";
+console.log(a);
 
 /*
 METHOD 4: SCOPE AND LEXICAL ENVIRONMENT
 */
+/*
 function a() {
     var b = 10;
     c();
     function c() {
-        console.log(b);
+      //  console.log(b);
     }  
 }
 a();
+
+/*
+METHOD 5: LET AND CONST DECLARATIONS ARE HOISTED
+*/
+/*
+let p = 10;
+console.log(p);
+var q = 100;
+
+/*
+METHOD 6: BLOCK IN JavaScript
+*/
+/*
+if (true){
+    //block is defined by curly breaces
+    //compound statement
+    //We group multiple statements together in a block so that we can use it where javascript expects one statement
+    var a = 10;
+    console.log(a);
+}
+
+/*
+METHOD 7: LET AND CONST DECLARATIONS ARE HOISTED
+*/
+{
+    var p = 10;
+    let q = 20;
+    const r = 30;
+    console.log(p);
+    console.log(q);
+    console.log(r);
+}
+console.log(p);
+console.log(q);
+console.log(r);
+
+/*
+METHOD 8: SHADOWING  
+*/
+var p = 100;
+{
+    var p = 10;
+    let q = 20;
+    const r = 30;
+    console.log(p);
+    console.log(q);
+    console.log(r);
+}
+console.log(p);
+/* OUTPUT
+10
+20 
+30
+10 HERE, we can see that the variable in third line modifies 
+the value of first var declaration*/
