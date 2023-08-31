@@ -63,3 +63,15 @@ function b() {
 /*
 METHOD 4: UNDEFINED AND NIT DEFINED
 */
+
+/*
+METHOD 4: SCOPE AND LEXICAL ENVIRONMENT
+*/
+function a() {
+    var b = 10;
+    c();
+    function c() {
+        console.log(b);
+    }  
+}
+a();
