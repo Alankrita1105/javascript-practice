@@ -1,5 +1,4 @@
-/*
-/*
+/*************** 
 CONCEPT 1
 Cycle of allocations and call stack
 */
@@ -139,3 +138,31 @@ console.log(p);
 30
 10 HERE, we can see that the variable in third line modifies 
 the value of first var declaration*/
+
+/*
+function func1() {
+    setTimeout(() => {
+        console.log(e);
+        console.log(f);
+    }, 3000);
+    var e = 2;
+    let f = 12;
+}
+func1()
+*********************/
+ /*
+METHOD 8: CLOSURES
+*/
+function x() {
+    var a = 7;
+    function y() {
+        console.log(a);
+    }
+    return y ;
+}
+var z = x();
+console.log(z);
+
+//OUTPUT: 7
+//Here Lexical comes to scope.
+
