@@ -12,7 +12,6 @@ x();
 OUTPUT: These are Closures, 1
 */
 
- 
 //QUES 2:
 /*
 function x() {
