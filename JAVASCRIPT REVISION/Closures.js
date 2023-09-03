@@ -48,6 +48,7 @@ function x() {
 x();
 
 OUTPUT:
+
 Alankrita Srivastava
 0
 1
