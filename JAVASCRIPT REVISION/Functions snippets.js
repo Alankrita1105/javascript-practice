@@ -1,16 +1,17 @@
-//Function Statement
+//Function Statement aka Function Declaration
+
 function a() {
     console.log("a called");
 }
+a();
 
 //Function Expression
 var b = function() {
-
+    console.log("Expression");
 }
+b(); 
 
-//Function Declaration
-
-//Anonymous Function
+//Anonymous Function - doesn't has its own identity
 
 //Named function Expression
 
